@@ -11,8 +11,20 @@ and open the template in the editor.
 div{
 	border: 0.2em solid white;
 	margin: 1%;
+	
 }
 
 
 
+@mixin clearfix() {
+  &::after {
+    display: block;
+    content: "";
+    clear: both;
+  }
+}
 
+// Usage as a mixin
+.element {
+  @include clearfix;
+}
