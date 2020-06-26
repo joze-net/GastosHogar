@@ -23,7 +23,7 @@
     	<h1 align="center">Gastos Hogar</h1>
 
         <div class="container" >
-        	<form>
+            <form action="Iniciar" method="get">
         		<div class="row">
         			
 	        	 	
@@ -33,10 +33,11 @@
 	        		</div>
       			
       			    <div class="container"  >
-	        			<input type="submit" name="guardar" value="Guardar" class="btn btn-primary btn-sm ">
+                                        <input type="hidden" value="IngresarSueldo" name="instruccion">
+	        			<input type="submit"  value="Guardar" class="btn btn-primary btn-sm ">
 	       		    </div>
 	       	    </div>
-       	    </form>
+                </form>
         </div>
         
         <div class="container">
